@@ -18,7 +18,7 @@ function append(data){
     
 }
 async function topCoins(){
-    let response=await fetch("https://api.coingecko.com/api/v3/search/trending");
+    let response=await fetch("https://api.drc-20.org/api/v3/search/trending");
     let data=await response.json();
     console.log(data);
     append(data);
