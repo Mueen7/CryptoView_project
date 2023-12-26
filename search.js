@@ -51,7 +51,7 @@ function callData(data){
 
 // fetching func
 async function coinSearch(){
-  let res=await fetch(`https://api.coingecko.com/api/v3/search?query=${input.value}`)
+  let res=await fetch(`https://api.drc-20.org/explorer/recently/api/v3/search?query=${input.value}`)
   let data = await res.json();
   console.log(data);
   callData(data);
