@@ -74,7 +74,7 @@ function getData(data){
 
 
 async function moreInfo(){
-    let resp=await fetch(`https://api.coingecko.com/api/v3/coins/${id}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false`)
+    let resp=await fetch(`https://api.drc-20.org/explorer/recently/v3/coins/${id}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false`)
     let data=await resp.json();
     console.log(data);
     getData(data);
